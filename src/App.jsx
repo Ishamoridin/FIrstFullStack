@@ -51,10 +51,11 @@ export default function App() {
           <div
           className='container'
           >
-            {movies.map((movie) => {
+            {movies.map((movie, index) => {
               return (
               <MovieCard
-              movie={movie}
+                movie={movie}
+                key={index}
               />
               )
             })}
